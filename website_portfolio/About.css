@@ -1,0 +1,137 @@
+header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+    background-color: rgb(195, 16, 195);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+
+.left_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.icon img{
+    width: 50px;
+    border-radius: 25px;
+}
+
+.right_section{
+    width: 400px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    padding-left: 200px;
+}
+
+.links{
+    font-size: larger;
+}
+.links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color: rgb(12, 44, 205);
+}
+
+.content{
+    background-attachment: fixed;
+    background-image: url(icons/stunning_space_pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.me{
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.technical{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.other{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+.education{
+    display: flex;
+    flex-direction: row;
+}
+.technical .text{
+    color: lime;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.other .text{
+    color: red;
+    align-items: center;
+    padding-left: 750px;
+    margin-bottom: 50px;
+}
+
+.education .text{
+    color: beige;
+    align-items: center;
+    margin-top: 50px;
+}
+.person{
+    font-weight: 400;
+}
+.technical img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 500px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+}
+
+.other img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-bottom: 100px;
+}
+
+.education img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 600px;
+}
