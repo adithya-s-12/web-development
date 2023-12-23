@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <title>home_page</form></title>
+</head>
+<body>
+    <img class="image" src="https://unicertglobal.com/wp-content/uploads/2019/04/application-form.jpg">
+    
+    <form class="form" method="post">
+
+        <p>Name:</p>
+        <input type="text" id="name" onblur="name_check()" required><p id="result_name"></p>
+        
+        <p>Email:</p>
+        <input type="email" id="email" required>
+
+        <p>Password:</p>
+        <input type="password" id="password" oninput="password_check()" required><p id="result_password"></p>
+
+        <p>Mobile Number:</p>
+        <input type="number" id="mobile" placeholder="xxxxxxxxxx" oninput="mobile_check()" required><p id="result_number"></p>
+
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" > Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        
+        <p>Completed Standards:</p>
+        <label><input type="checkbox" value="yes"> 10th</label>
+        <label><input type="checkbox" value="yes"> 12th</label>
+        
+        <p>Date of Birth:</p>
+        <input type="date" id="DOB" oninput="dob_check()" required>
+        <p>Please enter the marks of the highest standard you have completed:</p>
+        <table class="table">
+            <th class="table_head">
+                <tr><td id="head">subject</td><td id="head">maximum marks</td><td id="head">marks obtained</td></tr>
+            </th>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-1"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-2"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-3"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-4"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-5"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+            <tr class="table_content">
+                <td><input type="text" class="subject" placeholder="subject-6"></td><td><input type="number" class="max_marks"></td><td><input type="number" class="marks"></td>
+            </tr>
+        </table>
+
+        <button class="verification_eligibility" onclick="validate_form()">verify eligibility</button>
+    </form>
+</body>
+</html>
